@@ -1,8 +1,14 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body > nav {
+  grid-area: nav;
+  background-color: #6a1a21;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
 }
 
-a {
-  color: #00B7FF;
+nav > img {
+  width: 250px;
+  object-fit: contain;
+  margin-right: auto;
 }
