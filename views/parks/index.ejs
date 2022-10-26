@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<ul>
+  <% parks.forEach(p => { %>
+  <li><%= p.name %> - <%= p.street %></li>
+  <% }); %>
+</ul>
+
+<a href="/parks/new">Add Park</a>
+
+<%- include('../partials/footer') %>
