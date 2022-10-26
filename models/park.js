@@ -1,28 +1,33 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const parkSchema = new Schema({
+const parkSchema = new Schema(
+  {
     name: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
-    address: {
-        type: String,
-        required: true
+    street: {
+      type: String,
+      required: true,
     },
-    picture: {
-        type: Image,
-    },
+    // picture: {
+    //   data: Buffer,
+    //   contentType: String,
+    // },
     washrooms: {
-        type: Boolean,
-        default: false
+      type: String,
+      enum: ["Yes", "No"],
+      required: true,
     },
     amenities: {
-        type: String
+      type: String,
     },
-    reviews: [{type: Schema.Types.ObjectId, ref: "Review"}]
-}, {
-    timestamps: true
-});
+    reviews: [{ type: Schema.Types.ObjectId, ref: "Review" }],
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = mongoose.model("Park", parkSchema)
+module.exports = mongoose.model("Park", parkSchema);
