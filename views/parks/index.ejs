@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <ul>
-  <% parks.forEach(p => { %>
+  <% parks.forEach(p => { %> <% console.log(p) %>
   <li><a href="/parks/<%= p._id %>"><%= p.name %> - <%= p.street %></a></li>
   <% }); %>
 </ul>

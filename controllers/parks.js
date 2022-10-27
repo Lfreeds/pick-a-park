@@ -15,7 +15,7 @@ function show(req, res) {
   Park.findById(req.params.id)
     .populate("reviews")
     .exec(function (err, park) {
-      Review.find({}).exec(function (err, reviews) {
+      Review.find({ park: req.params.id }).exec(function (err, reviews) {
         console.log(reviews);
         res.render("parks/show", { title: `${park.name}`, park, reviews });
       });

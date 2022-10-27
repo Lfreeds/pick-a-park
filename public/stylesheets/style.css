@@ -8,7 +8,7 @@ body > nav {
 }
 
 nav > img {
-  width: 250px;
+  width: 150px;
   object-fit: contain;
   margin-right: auto;
 }

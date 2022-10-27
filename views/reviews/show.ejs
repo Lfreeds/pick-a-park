@@ -2,7 +2,7 @@
 
 <section id="show-page">
   <div>Park:</div>
-  <div><%= review.park %></div>
+  <div><%= review.park.name %></div>
   <div>Rating:</div>
   <div><%= review.rating %></div>
   <div>Shade:</div>
@@ -14,5 +14,7 @@
   <div>Content:</div>
   <div><%= review.content %></div>
 </section>
+
+<a href="/reviews/update/<%= review._id %>">Edit Review</a>
 
 <%- include('../partials/footer') %>

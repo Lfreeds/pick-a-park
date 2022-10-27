@@ -2,7 +2,16 @@
 
 <ul>
   <% reviews.forEach(r => { %>
-  <li><a href="/reviews/<%= r._id%>"><%= r.title %> - <%= r.park %></a></li>
+  <li>
+    <a href="/reviews/<%= r._id%>"><%= r.title %> - <%= r.park.name %></a>
+    <form
+      action="/reviews/<%= r._id %>?_method=DELETE"
+      class="delete-form"
+      method="POST"
+    >
+      <button type="submit">Delete Review</button>
+    </form>
+  </li>
   <% }); %>
 </ul>
 
