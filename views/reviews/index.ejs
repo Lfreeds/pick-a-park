@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<ul>
+<ul style="list-style: none">
   <% reviews.forEach(r => { %>
   <li>
     <a href="/reviews/<%= r._id%>"><%= r.title %> - <%= r.park.name %></a>
