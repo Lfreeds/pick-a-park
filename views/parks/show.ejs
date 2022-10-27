@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Street:</div>
+  <div><%= park.street %></div>
+  <div>Washrooms:</div>
+  <div><%= park.washrooms %></div>
+  <div>Amenities:</div>
+  <div><%= park.amenities %></div>
+  <div>Reviews:</div>
+  <div>
+    <% reviews.forEach(r => { %>
+    <li><a href="/reviews/<%= r._id %>"><%= r.title %></a></li>
+    <% }); %>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>

@@ -2,7 +2,7 @@
 
 <ul>
   <% parks.forEach(p => { %>
-  <li><%= p.name %> - <%= p.street %></li>
+  <li><a href="/parks/<%= p._id %>"><%= p.name %> - <%= p.street %></a></li>
   <% }); %>
 </ul>
 

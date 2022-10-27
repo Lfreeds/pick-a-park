@@ -2,7 +2,7 @@
 
 <ul>
   <% reviews.forEach(r => { %>
-  <li><%= r.rating %> - <%= r.content %></li>
+  <li><a href="/reviews/<%= r._id%>"><%= r.title %> - <%= r.park %></a></li>
   <% }); %>
 </ul>
 
