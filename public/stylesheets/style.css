@@ -1,6 +1,6 @@
 body > nav {
   grid-area: nav;
-  background-color: #6a1a21;
+  background-color: #0a6e35;
   display: flex;
   justify-content: flex-end;
   align-items: center;

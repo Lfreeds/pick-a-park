@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<ul>
+  <% reviews.forEach(r => { %>
+  <li><%= r.rating %> - <%= r.content %></li>
+  <% }); %>
+</ul>
+
+<a href="/reviews/new">Add Review</a>
+
+<%- include('../partials/footer') %>

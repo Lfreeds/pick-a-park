@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const reviewSchema = new Schema({
+  title: { type: String, required: true },
   park: [{ type: Schema.Types.ObjectId, ref: "Park" }],
   rating: { type: Number, min: 1, max: 5, default: 5, required: true },
   shade: {
@@ -18,7 +19,7 @@ const reviewSchema = new Schema({
   },
   ageRange: {
     type: String,
-    enum: ["1 - 3 years", "3 - 6 years", "6 - 10 years", "11 years and up"],
+    enum: ["1 - 3 years", "3 - 6 years", "6 - 10 years", "11 years +"],
     required: true,
   },
   condition: {
