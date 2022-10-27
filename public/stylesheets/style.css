@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 body > nav {
   grid-area: nav;
   background-color: #0a6e35;
@@ -11,4 +15,55 @@ nav > img {
   width: 150px;
   object-fit: contain;
   margin-right: auto;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.property {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  padding: 30px;
+  text-decoration: underline;
+}
+
+a {
+  padding: 15px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.title {
+  grid-column: 1 / 3;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 3;
+}
+
+.button {
+  justify-self: center;
+  grid-column: 1 / 3;
+  width: fit-content;
 }

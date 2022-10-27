@@ -5,6 +5,7 @@ function index(req, res) {
   Review.find()
     .populate("park")
     .then((reviews) => {
+      console.log(reviews);
       res.render("reviews/index", { title: "All Reviews", reviews });
     });
 }
@@ -24,13 +25,21 @@ function create(req, res) {
   });
 }
 
-function updateReview(req, res) {}
+function updateReview(req, res) {
+  console.log(req.params.id);
+  Review.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    .then((review) => {
+      res.redirect("/reviews");
+    })
+    .catch(function (err) {
+      res.send(err);
+    });
+}
 
 function show(req, res) {
   Review.findById(req.params.id)
     .populate("park")
     .exec(function (err, review) {
-      console.log(Park);
       res.render("reviews/show", { title: `${review.title}`, review });
     });
 }
@@ -59,4 +68,5 @@ module.exports = {
   index,
   delete: deleteReview,
   update,
+  updateReview,
 };

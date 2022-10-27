@@ -1,13 +1,13 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-  <div>Street:</div>
+  <div class="property">Street:</div>
   <div><%= park.street %></div>
-  <div>Washrooms:</div>
+  <div class="property">Washrooms:</div>
   <div><%= park.washrooms %></div>
-  <div>Amenities:</div>
+  <div class="property">Amenities:</div>
   <div><%= park.amenities %></div>
-  <div>Reviews:</div>
+  <div class="property">Reviews:</div>
   <div>
     <% reviews.forEach(r => { %>
     <li><a href="/reviews/<%= r._id %>"><%= r.title %></a></li>

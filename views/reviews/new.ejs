@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <form action="/reviews" method="POST">
-  <label
+  <label class="title"
     >Title of Review
     <input type="text" name="title" />
   </label>
@@ -51,7 +51,7 @@
       <option value="Great">Great</option>
     </select>
   </label>
-  <label
+  <label class="content"
     >Description:
     <input
       type="text"
@@ -59,7 +59,7 @@
       placeholder="Enter review description here"
     />
   </label>
-  <input type="submit" value="Add Review" />
+  <input class="button" type="submit" value="Add Review" />
 </form>
 
 <%- include('../partials/footer') %>

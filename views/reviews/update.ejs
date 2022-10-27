@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
-<form action="/reviews" method="POST">
-  <label
+<form action="/reviews/update/<%= review._id %>" method="POST">
+  <label class="title"
     >Title of Review
     <input type="text" name="title" />
   </label>
@@ -43,7 +43,7 @@
       <option value="Great">Great</option>
     </select>
   </label>
-  <label
+  <label class="content"
     >Description:
     <input
       type="text"
@@ -51,7 +51,7 @@
       placeholder="Enter review description here"
     />
   </label>
-  <input type="submit" value="Edit Review" />
+  <input class="button" type="submit" value="Edit Review" />
 </form>
 
 <%- include('../partials/footer') %>
