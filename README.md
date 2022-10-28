@@ -8,6 +8,8 @@
 
 Pick a park is an application that was designed to allow parents to review and rate parks in their area for other parents to see!
 
+To visit the application click on this <a href="https://pick-a-park-sei.herokuapp.com/">link</a>
+
 ### Screenshots
 
 #### Home Page
