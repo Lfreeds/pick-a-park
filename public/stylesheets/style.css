@@ -18,7 +18,7 @@ body > nav {
 
 nav > img {
   display: flex;
-  width: 150px;
+  width: 120px;
   object-fit: contain;
 }
 
@@ -38,6 +38,11 @@ section {
 h1 {
   padding: 30px;
   text-decoration: underline;
+}
+
+h2 {
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 a {

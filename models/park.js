@@ -11,10 +11,10 @@ const parkSchema = new Schema(
       type: String,
       required: true,
     },
-    // picture: {
-    //   data: Buffer,
-    //   contentType: String,
-    // },
+    city: {
+      data: String,
+      //   required: true,
+    },
     washrooms: {
       type: String,
       enum: ["Yes", "No"],
