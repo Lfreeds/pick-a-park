@@ -12,8 +12,8 @@ const parkSchema = new Schema(
       required: true,
     },
     city: {
-      data: String,
-      //   required: true,
+      type: String,
+      required: true,
     },
     washrooms: {
       type: String,
