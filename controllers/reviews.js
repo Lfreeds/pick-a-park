@@ -5,7 +5,6 @@ function index(req, res) {
   Review.find()
     .populate("park")
     .then((reviews) => {
-      console.log(reviews);
       res.render("reviews/index", { title: "All Reviews", reviews });
     });
 }
@@ -18,7 +17,6 @@ function newReview(req, res) {
 
 function create(req, res) {
   const review = new Review(req.body);
-  console.log(req.body);
   review.save(function (err) {
     if (err) return res.send(err.message);
     res.redirect("/reviews");
@@ -26,7 +24,6 @@ function create(req, res) {
 }
 
 function updateReview(req, res) {
-  console.log(req.params.id);
   Review.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
     .then((review) => {
       res.redirect("/reviews");
@@ -45,10 +42,7 @@ function show(req, res) {
 }
 
 function deleteReview(req, res) {
-  console.log(req.params.id);
-  Review.find({ _id: req.params.id }).then((review) => {
-    console.log(review);
-  });
+  Review.find({ _id: req.params.id }).then((review) => {});
   Review.deleteOne({ _id: req.params.id }).then(res.redirect("/reviews"));
 }
 
@@ -56,7 +50,6 @@ function update(req, res) {
   Review.findById(req.params.id)
     .populate("park")
     .exec(function (err, review) {
-      console.log(Park);
       res.render("reviews/update", { title: `Update Form`, review });
     });
 }
