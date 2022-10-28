@@ -8,9 +8,35 @@
 
 Pick a park is an application that was designed to allow parents to review and rate parks in their area for other parents to see!
 
-### Screenshot
+### Screenshots
+
+#### Home Page
 
 <img src="public/images/Pick-a-park-screenshot.png">
+
+#### Park Index
+
+<img src="public/images/park-index.png">
+
+#### New Park
+
+<img src="public/images/park-new.png">
+
+#### Show Park
+
+<img src="public/images/park-show.png">
+
+#### Review Index
+
+<img src="public/images/review-index.png">
+
+#### New Review
+
+<img src="public/images/review-new.png">
+
+#### Show Review
+
+<img src="public/images/review-show.png">
 
 ### Technologies Used:
 
