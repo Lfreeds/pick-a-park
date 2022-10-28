@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-
+<img src="/public/images/tree.png" width="80" height="80">
 <h1 align="center">Pick-a-Park</h1>
 </div>
 
