@@ -12,7 +12,7 @@ Pick a park is an application that was designed to allow parents to review and r
 
 ### Screenshot
 
-<img src="./public/images/pick-a-park-screenshot.png">
+<img src="./images/pick-a-park-screenshot.png">
 
 ### Technologies Used:
 
