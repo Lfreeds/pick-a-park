@@ -15,6 +15,15 @@
   <div><%= review.content %></div>
 </section>
 
-<a href="/reviews/update/<%= review._id %>">Edit Review</a>
+<form action="/reviews/update/<%= review._id %>" method="GET">
+  <button type="submit">Edit Review</button>
+</form>
+<form
+  action="/reviews/<%= review._id %>?_method=DELETE"
+  class="delete-form"
+  method="POST"
+>
+  <button type="submit">Delete Review</button>
+</form>
 
 <%- include('../partials/footer') %>

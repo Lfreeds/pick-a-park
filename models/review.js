@@ -19,7 +19,13 @@ const reviewSchema = new Schema({
   },
   ageRange: {
     type: String,
-    enum: ["1 - 3 years", "3 - 6 years", "6 - 10 years", "11 years +"],
+    enum: [
+      "1 - 3 years",
+      "3 - 6 years",
+      "6 - 10 years",
+      "11 years +",
+      "All Ages",
+    ],
     required: true,
   },
   condition: {
