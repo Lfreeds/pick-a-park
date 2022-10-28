@@ -14,8 +14,7 @@
     <% reviews.forEach(r => { %>
     <li><a href="/reviews/<%= r._id %>"><%= r.title %></a></li>
     <% }); %>
-    <a class="new-link" href="/reviews/new">Add Review</a>
   </div>
 </section>
-
+<a class="new-link" href="/reviews/new">Add Review</a>
 <%- include('../partials/footer') %>
