@@ -1,8 +1,6 @@
 <br />
 <div align="center">
 
-    <img src="images/tree.svg alt="" width="80" height="80">
-
 <h1 align="center">Pick-a-Park</h1>
 </div>
 
@@ -12,7 +10,7 @@ Pick a park is an application that was designed to allow parents to review and r
 
 ### Screenshot
 
-<img src="./images/pick-a-park-screenshot.png">
+<img src="public/images/pick-a-park-screenshot.png">
 
 ### Technologies Used:
 
